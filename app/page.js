@@ -4,7 +4,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Home() {
     return (
-        <div className="w-full">
+        <div className="w-full animate-fade-in-up animate-duration-1000">
             <div className="bg-gray-dark p-3 mb-6 rounded-lg text-center">
                 <p>!Hola, soy un Analista de Datos de Colombia!</p>
             </div>
@@ -20,13 +20,13 @@ export default function Home() {
                 <div className="flex justify-center items-center gap-2">
                     <Link
                         href="/analisis-projects"
-                        className="bg-blue px-2 py-1 rounded-lg"
+                        className="bg-blue px-2 py-1 rounded-lg hover:bg-blue-dark transition-colors"
                     >
                         Analisis Portafolio
                     </Link>
                     <Link 
                         href="/dev-projects" 
-                        className="bg-blue px-2 py-1 rounded-lg"
+                        className="bg-blue px-2 py-1 rounded-lg hover:bg-blue-dark transition-colors"
                     >
                         Desarrollo Portafolio
                     </Link>

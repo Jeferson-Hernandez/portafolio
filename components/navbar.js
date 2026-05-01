@@ -9,9 +9,11 @@ const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false)
 
     return (
-        <nav className="fixed inset-0 flex items-center justify-between py-2 px-4 md:w-3xl h-14 md:mx-auto bg-dark/80 backdrop-blur-xs z-10">
-            <Link href="/" className="flex items-center font-bold gap-2">
-                <IoGameController className="w-5 h-5" />
+        <nav className="fixed inset-0 flex items-center justify-between py-2 px-4 md:w-3xl h-14 md:mx-auto bg-dark/80 backdrop-blur-xs z-10 ">
+            <Link href="/" className="group flex items-center font-bold gap-2">
+                <IoGameController 
+                    className="w-5 h-5 group-hover:animate-sway group-hover:animate-duration-1000"
+                />
                 <span className="text-lg">Jeferson Hernandez</span>
             </Link>
             <div className="hidden md:flex gap-3">
@@ -25,7 +27,7 @@ const Navbar = () => {
                 </button>
                 {
                     menuToggle && (
-                        <ul className="absolute top-12 right-1 w-50 h-fit rounded-lg p-3 bg-blue md:hidden">
+                        <ul className="absolute top-12 right-1 w-50 h-fit rounded-lg p-3 bg-blue md:hidden animate-fade-in animate-duration-300">
                             <li className="py-2">
                                 <Link href="/analisis-projects">Analisis Proyectos</Link>
                             </li>

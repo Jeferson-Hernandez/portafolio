@@ -1,20 +1,23 @@
-import { ANALISIS_PROJECTS } from "@/consts/analisis-projects"
 import Image from "next/image"
 import Link from "next/link"
+import { ANALISIS_PROJECTS } from "@/consts/analisis-projects"
+import { IoIosArrowForward } from "react-icons/io";
+
 
 const AnalisisProject = async ({ params }) => {
     const { projectid } = await params
     const project = ANALISIS_PROJECTS.find((p) => p.id == projectid)
 
     return (
-        <div className="bg-dark">
-            <div className="flex items-center gap-3 mb-4">
+        <div className="bg-dark animate-fade-in-up animate-duration-1000">
+            <div className="flex items-center gap-1 mb-4">
                 <Link
                     href="/analisis-projects"
                     className="text-blue"
                 >
                     Analisis de Datos
                 </Link>
+                <IoIosArrowForward />
                 <h2 className="text-center font-bold text-lg">
                     {project.name}
                     <span className="text-xs ml-2 py-0.5 px-1 bg-gray-darker rounded">

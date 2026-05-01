@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function page() {
     return (
-        <div className="bg-dark">
+        <div className="animate-fade-in-up animate-duration-1000">
             <h1 className="text-xl font-bold my-4">Desarrollo Web</h1>
             <div className="grid md:grid-cols-2 gap-6" >
                 {

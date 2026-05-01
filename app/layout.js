@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
             <body className=" bg-dark text-white px-4 pt-14 pb-4 md:w-3xl md:mx-auto">
                 <Navbar />
                 <Scene />
-                <section className="sm:w-117.5 sm:mx-auto md:w-150 px-4">
+                <section className=" sm:w-117.5 sm:mx-auto md:w-150 px-4">
                     {children}
                     <Footer />
                 </section>

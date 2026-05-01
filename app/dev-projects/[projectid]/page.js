@@ -1,20 +1,22 @@
 import { DEV_PROJECTS } from "@/consts/dev-projects"
 import Image from "next/image"
 import Link from "next/link"
+import { IoIosArrowForward } from "react-icons/io"
 
 const DevProject = async ({ params }) => {
     const { projectid } = await params
     const project = DEV_PROJECTS.find((p) => p.id == projectid)
 
     return (
-        <div className="bg-dark">
-            <div className="flex items-center gap-3 mb-4">
+        <div className="bg-dark animate-fade-in-up animate-duration-1000">
+            <div className="flex items-center gap-1 mb-4">
                 <Link
                     href="/dev-projects"
                     className="text-blue"
                 >
                     Desarrollo
                 </Link>
+                <IoIosArrowForward />
                 <h2 className="text-center font-bold text-lg">
                     {project.name}
                     <span className="text-xs ml-2 py-0.5 px-1 bg-gray-darker rounded">{project.year}</span>

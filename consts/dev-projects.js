@@ -3,7 +3,7 @@ export const DEV_PROJECTS = [
         id: 'musicapp',
         name: 'Music App',
         year: '2024',
-        bio: "Music App inspirada en un diseño online con funcionalidad para reproducir musica y agregar canciones a una coleccion de me gusta",
+        bio: "Music App inspirada en un diseño online con funcionalidad para reproducir musica y agregar canciones a una coleccion de me gustas",
         website: 'https://music-app-next.vercel.app/',
         github: 'https://github.com/Jeferson-Hernandez/music_app_next',
         imgs: [

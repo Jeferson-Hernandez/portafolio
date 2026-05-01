@@ -4,12 +4,15 @@ import Link from "next/link"
 
 export default function page() {
     return (
-        <div>
+        <div className="animate-fade-in-up animate-duration-1000">
             <h1 className="text-xl font-bold my-4">Analisis de Datos</h1>
             <div className="grid md:grid-cols-2 gap-6" >
                 {
-                    ANALISIS_PROJECTS.map((project) => (
-                        <div key={project.id}>
+                    ANALISIS_PROJECTS.map((project, index) => (
+                        <div 
+                            key={project.id}
+                            className="animate-fade-in-up animate-duration-1000 " 
+                        >
                             <Link href={`/analisis-projects/${project.id}`}>
                                 <Image
                                     src={project.imgs[0]}
