@@ -32,6 +32,8 @@ const DevProject = async ({ params }) => {
                     </span>
                     <Link
                         href={project.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-blue"
                     >
                         {project.website}
@@ -43,6 +45,8 @@ const DevProject = async ({ params }) => {
                     </span>
                     <Link
                         href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-blue"
                     >
                         {project.github}

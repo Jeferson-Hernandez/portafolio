@@ -35,6 +35,8 @@ const AnalisisProject = async ({ params }) => {
                     </span>
                     <Link
                         href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-blue"
                     >
                         {project.github}

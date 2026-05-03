@@ -57,6 +57,8 @@ export default function Home() {
                     <li className="bg-blue-dark w-fit px-2 py-1 rounded ml-4 mb-3">
                         <Link 
                             href="https://github.com/jeferson-hernandez" 
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex items-center gap-3"
                         >
                             <FaGithub/>
@@ -66,6 +68,8 @@ export default function Home() {
                     <li className="bg-blue-dark w-fit px-2 py-1 rounded ml-4 mb-3">
                         <Link 
                             href="https://www.linkedin.com/in/jefer-hernandez/" 
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex items-center gap-3"
                         >
                             <FaLinkedin/>
@@ -75,6 +79,8 @@ export default function Home() {
                     <li className="bg-blue-dark w-fit px-2 py-1 rounded ml-4 mb-3">
                         <Link 
                             href="https://www.linkedin.com/in/jefer-hernandez/" 
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="flex items-center gap-3"
                         >
                             <FaSquareXTwitter/>

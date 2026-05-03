@@ -19,7 +19,9 @@ const Navbar = () => {
             <div className="hidden md:flex gap-3">
                 <Link href="/analisis-projects">Analisis Proyectos</Link>
                 <Link href="/dev-projects">Desarrollo Proyectos</Link>
-                <Link href="https://github.com/jeferson-hernandez">Código</Link>
+                <Link href="https://github.com/Jeferson-Hernandez/portafolio" target="_blank" rel="noopener noreferrer">
+                    Código
+                </Link>
             </div>
             <div className="relative flex md:hidden rounded gap-2">
                 <button onClick={() => setMenuToggle(!menuToggle)} className="w-10 h-10 bg-blue grid items-center justify-center rounded-lg">
@@ -28,14 +30,16 @@ const Navbar = () => {
                 {
                     menuToggle && (
                         <ul className="absolute top-12 right-1 w-50 h-fit rounded-lg p-3 bg-blue md:hidden animate-fade-in animate-duration-300">
-                            <li className="py-2">
+                            <li onClick={() => setMenuToggle(!menuToggle)} className="py-2">
                                 <Link href="/analisis-projects">Analisis Proyectos</Link>
                             </li>
-                            <li className="py-2">
+                            <li onClick={() => setMenuToggle(!menuToggle)} className="py-2">
                                 <Link href="/dev-projects">Desarrollo Proyectos</Link>
                             </li>
-                            <li className="py-2">
-                                <Link href="https://github.com/jeferson-hernandez">Código</Link>
+                            <li onClick={() => setMenuToggle(!menuToggle)} className="py-2">
+                                <Link href="https://github.com/Jeferson-Hernandez/portafolio" target="_blank" rel="noopener noreferrer">
+                                    Código
+                                </Link>
                             </li>
                         </ul>
                     )
