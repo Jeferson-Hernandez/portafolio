@@ -65,8 +65,8 @@ const DevProject = async ({ params }) => {
                         <Image
                             key={img}
                             src={img}
-                            width={500}
-                            height={500}
+                            width={900}
+                            height={900}
                             alt=""
                             loading="lazy"
                             className="w-full rounded-lg"

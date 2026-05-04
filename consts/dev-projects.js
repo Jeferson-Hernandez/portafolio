@@ -3,7 +3,7 @@ export const DEV_PROJECTS = [
         id: 'musicapp',
         name: 'Music App',
         year: '2024',
-        bio: "Music App inspirada en un diseño online con funcionalidad para reproducir musica y agregar canciones a una coleccion de me gustas",
+        bio: "Music App inspirada en un diseño online con funcionalidad para reproducir música y agregar canciones a una colección de me gusta.",
         website: 'https://music-app-next.vercel.app/',
         github: 'https://github.com/Jeferson-Hernandez/music_app_next',
         imgs: [
@@ -45,7 +45,7 @@ export const DEV_PROJECTS = [
         id: 'weatherapp',
         name: 'Weather App',
         year: '2025',
-        bio: "Página sobre el clima usando el API de weatherapi.com que cambia de color dependiendo del clima en la zona seleccionada",
+        bio: "Página sobre el clima usando la API de weatherapi.com que cambia de color dependiendo del clima en la zona seleccionada.",
         website: 'https://space-tourism-0720.netlify.app/',
         github: 'https://github.com/Jeferson-Hernandez/space-tourism',
         imgs: [
