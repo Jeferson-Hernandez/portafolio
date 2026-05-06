@@ -26,19 +26,23 @@ const DevProject = async ({ params }) => {
                 {project.bio}
             </p>
             <ul className="pl-4 mb-6">
-                <li className="pb-1">
-                    <span className="text-xs font-bold bg-blue-dark py-0.5 px-1 rounded mr-2">
-                        WEBSITE
-                    </span>
-                    <Link
-                        href={project.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue"
-                    >
-                        {project.website}
-                    </Link>
-                </li>
+                {
+                    project.website && (
+                        <li className="pb-1">
+                            <span className="text-xs font-bold bg-blue-dark py-0.5 px-1 rounded mr-2">
+                                WEBSITE
+                            </span>
+                            <Link
+                                href={project.website}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue"
+                            >
+                                {project.website}
+                            </Link>
+                        </li>
+                    )
+                }
                 <li className="pb-1">
                     <span className="text-xs font-bold bg-blue-dark py-0.5 px-1 rounded mr-2">
                         GITHUB

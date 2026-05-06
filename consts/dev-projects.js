@@ -46,12 +46,12 @@ export const DEV_PROJECTS = [
         name: 'Weather App',
         year: '2025',
         bio: "Página sobre el clima usando la API de weatherapi.com que cambia de color dependiendo del clima en la zona seleccionada.",
-        website: 'https://space-tourism-0720.netlify.app/',
+        website: false,
         github: 'https://github.com/Jeferson-Hernandez/space-tourism',
         imgs: [
             '/images/development/weatherapp.png',
-            '/images/development/weatherapp-beijing.png',
-            '/images/development/weatherapp-berlin.png'
+            '/images/development/weatherapp-beijing.jpg',
+            '/images/development/weatherapp-berlin.jpg'
         ],
         stack: ['React', 'Tailwind', 'React-Router-Dom']
     },
